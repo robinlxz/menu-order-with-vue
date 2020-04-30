@@ -1,0 +1,128 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "盐焗鸡腿饭",
+      "date": "Aug 28 2018",
+      "time": "10:00",
+      "location": "Lau Pa Sat",
+      "description": "Salted Baked Chicken Rice",
+      "owner": "Chef Mao",
+      "category": "Rice set",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "PSS"
+        },
+        {
+          "id": "def456",
+          "name": "XZ"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "招牌扣肉饭",
+      "date": "Nov 12 2018",
+      "time": "12:00",
+      "location": "Lau Pa Sat",
+      "description": "Signature Braised Pork Belly Rice",
+      "owner": "Chef Mao",
+      "category": "Rice set",
+      "attendees": [
+        {
+          "id": "ghi789",
+          "name": "CQ"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "招牌滑蛋猪扒饭",
+      "date": "Dec 2 2018",
+      "time": "12:00",
+      "location": "Lau Pa Sat",
+      "description": "Signature Scrambled Egg With Pork Chop Rice",
+      "owner": "Chef Mao",
+      "category": "Rice set",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        },
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Eggs",
+      "date": "Aug 28 2018",
+      "time": "10:00",
+      "location": "SengKang",
+      "description": "Eggs for delivery",
+      "owner": "SingCafe Delivery",
+      "category": "sustainability",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        },
+        {
+          "id": "def456",
+          "name": "Gregg Pollack"
+        },
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "盐焗鸡腿干捞面",
+      "date": "Dec 2 2018",
+      "time": "12:00",
+      "location": "Lau Pa Sat",
+      "description": "Salted Baked Chicken dry noodle",
+      "owner": "Chef Mao",
+      "category": "Noodle set",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        },
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "鲜茄洋葱牛肉/猪扒",
+      "date": "Dec 2 2018",
+      "time": "12:00",
+      "location": "Lau Pa Sat",
+      "description": "Tomato and onion beef/pork",
+      "owner": "Chef Mao",
+      "category": "Cusine (no rice)",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Adam Jahr"
+        },
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        }
+      ]
+    }
+  ]
+}
