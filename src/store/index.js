@@ -6,11 +6,15 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    allDishes: []
+    allDishes: [],
+    allOrders: []
   },
   mutations: {
     SET_ALL_DISHES(state, allDishesData) {
       state.allDishes = allDishesData;
+    },
+    ADD_ORDER(state, orderObj) {
+      state.allOrders.push(orderObj);
     }
   },
   actions: {
@@ -23,6 +27,9 @@ export default new Vuex.Store({
           console.log('There is error for');
           console.log(error.response);
         });
+    },
+    submitOrderAction({ commit }, orderObj) {
+      commit('ADD_ORDER', orderObj);
     }
   },
   modules: {}
