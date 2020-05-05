@@ -19,7 +19,7 @@ export default new Vuex.Store({
   },
   actions: {
     fetchAllDishes({ commit }) {
-      DishServices.getAllDishes('/dishes')
+      DishServices.getAllDishes()
         .then(response => {
           commit('SET_ALL_DISHES', response.data);
         })
@@ -28,8 +28,14 @@ export default new Vuex.Store({
           console.log(error.response);
         });
     },
-    submitOrderAction({ commit }, orderObj) {
-      commit('ADD_ORDER', orderObj);
+    submitOrderAction({ commit }, { orderObj }) {
+      console.log('orderObj in action:', orderObj);
+      DishServices.postOrder(orderObj)
+        .then(() => commit('ADD_ORDER', orderObj))
+        .catch(error => {
+          console.log('There is error for');
+          console.log(error.response);
+        });
     }
   },
   modules: {}

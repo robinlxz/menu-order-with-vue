@@ -13,7 +13,7 @@ export default {
   getAllDishes() {
     return apiClient.get('/dishes');
   },
-  postOrder() {
-    return apiClient.post('/orders', order);
+  postOrder(orderObj) {
+    return apiClient.post('/orders', orderObj);
   }
 };
