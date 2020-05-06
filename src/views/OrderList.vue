@@ -8,10 +8,12 @@
       </div>-->
 
       <div class="field">
-        <select v-model="order.dish">
-          <option v-for="(dish, i) of allDishes" :key="i">{{
+        <select v-model="order.dish" required>
+          <option v-for="(dish, i) of allDishes" :key="i">
+            {{
             dish.title
-          }}</option>
+            }}
+          </option>
         </select>
       </div>
 
@@ -20,39 +22,35 @@
         <input
           v-model="order.specialNeeds"
           type="text"
-          placeholder="Any special needs for the dish"
+          placeholder="Special needs for the dish, if any"
         />
       </div>
 
       <h3>Address & Date</h3>
       <div class="field">
         <label>Postcode</label>
-        <input v-model="order.postcode" type="number" />
+        <input v-model="order.postcode" type="number" required />
       </div>
 
       <div class="field">
         <label>Date</label>
-        <datepicker v-model="order.date" :highlighted="highlightedDate" />
+        <datepicker v-model="order.date" :highlighted="highlightedDate" required />
       </div>
 
       <div class="field">
         <label>Address</label>
-        <input
-          v-model="order.address"
-          type="text"
-          placeholder="Address for delivery"
-        />
+        <input v-model="order.address" type="text" placeholder="Address for delivery" required />
       </div>
 
       <h3>Name & Contact</h3>
       <div class="field">
         <label>Name</label>
-        <input v-model="order.name" type="text" placeholder="Name" />
+        <input v-model="order.name" type="text" placeholder="Name" required />
       </div>
 
       <div class="field">
         <label>Mobile Number</label>
-        <input v-model="order.mobile" type="number" placeholder="Your mobile" />
+        <input v-model="order.mobile" type="number" placeholder="Your mobile" required />
       </div>
       <input class="order-button" type="submit" value="Make Order" />
     </form>
@@ -83,7 +81,9 @@ export default {
           })
           .then((this.order = this.generateFreshNewOrder()));
       } else {
-        alert('Please fill in all the info');
+        alert(
+          'Sorry, DB disconnected. Please click "Menu" on top and use wechat to order.'
+        );
       }
     },
     validateOrder() {
