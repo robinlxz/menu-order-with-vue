@@ -9,7 +9,9 @@
 
       <div class="field">
         <select v-model="order.dish">
-          <option v-for="(dish, i) of allDishes" :key="i">{{ dish.title }}</option>
+          <option v-for="(dish, i) of allDishes" :key="i">{{
+            dish.title
+          }}</option>
         </select>
       </div>
 
@@ -35,7 +37,11 @@
 
       <div class="field">
         <label>Address</label>
-        <input v-model="order.address" type="text" placeholder="Address for delivery" />
+        <input
+          v-model="order.address"
+          type="text"
+          placeholder="Address for delivery"
+        />
       </div>
 
       <h3>Name & Contact</h3>

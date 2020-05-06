@@ -2,6 +2,7 @@
   <div class="home">
     <img alt="SingCafe" src="https://i.ibb.co/QY2b0cB/Sing-Cafe-board.jpg" />
     <HelloWorld msg="Welcome to my Vue.js menu-order App" />
+    <!-- <v-btn>Test</v-btn> -->
   </div>
 </template>
 

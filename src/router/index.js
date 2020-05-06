@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import OrderList from '../views/OrderList.vue';
+import DishInfo from '@/views/DishInfo.vue';
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,12 @@ const routes = [
     path: '/order',
     name: 'Order',
     component: OrderList
+  },
+  {
+    path: '/dish/:id',
+    name: 'dish-info',
+    component: DishInfo,
+    props: true
   }
 ];
 

@@ -1,14 +1,19 @@
 <template>
-  <div class="dish-card -shadow">
-    <div class="title">
-      <h4>{{ dish.title }}</h4>
-      <h4>{{ dish['english-title'] }}</h4>
-      <BaseIcon name="unlock">Price: {{ dish.price }}</BaseIcon>
-      <div>
-        <BaseIcon name="users">Size: {{ dish.size }}</BaseIcon>
+  <router-link
+    class="dish-link"
+    :to="{ name: 'dish-info', params: { id: dish.id } }"
+  >
+    <div class="dish-card -shadow">
+      <div class="title">
+        <h4>{{ dish.title }}</h4>
+        <h4>{{ dish['english-title'] }}</h4>
+        <BaseIcon name="unlock">Price: {{ dish.price }}</BaseIcon>
+        <div>
+          <BaseIcon name="users">Size: {{ dish.size }}</BaseIcon>
+        </div>
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
