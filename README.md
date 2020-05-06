@@ -27,3 +27,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+Also follow this [Referecne](https://dev.to/rolanddoda/deploy-to-github-pages-like-a-pro-with-github-actions-4hdg).
