@@ -2,6 +2,9 @@
   <div>
     <h1>SingCafe Menu</h1>
     <DishCard v-for="(dish, i) in allDishes" :key="i" :dish="dish" />
+    <a href="https://robinlxz.github.io/SingCafeDelivery">
+      Full Menu with pictures
+    </a>
   </div>
 </template>
 

@@ -54,7 +54,7 @@
         <label>Mobile Number</label>
         <input v-model="order.mobile" type="number" placeholder="Your mobile" />
       </div>
-      <input type="submit" value="Make Order" />
+      <input class="order-button" type="submit" value="Make Order" />
     </form>
   </div>
 </template>
@@ -126,7 +126,11 @@ export default {
   justify-content: space-between;
 }
 .order-button {
-  color: aqua;
+  color: white;
+  background-color: #39b982;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* font-size: 0.8rem; */
+  padding: 0.4rem;
 }
 .field {
   margin-bottom: 24px;
