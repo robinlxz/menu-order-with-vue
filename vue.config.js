@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/singcafetest2/'
+  publicPath: '/menu-order-with-vue/'
 };
