@@ -10,9 +10,7 @@
       <div class="field">
         <select v-model="order.dish" required>
           <option v-for="(dish, i) of allDishes" :key="i">
-            {{
-            dish.title
-            }}
+            {{ dish.title }}
           </option>
         </select>
       </div>
@@ -50,7 +48,13 @@
 
       <div class="field">
         <label>Mobile Number</label>
-        <input v-model="order.mobile" type="number" placeholder="Your mobile" required />
+        <input
+          v-model="order.mobile"
+          type="number"
+          placeholder="Your mobile"
+          minlength="8"
+          required
+        />
       </div>
       <input class="order-button" type="submit" value="Make Order" />
     </form>
@@ -134,5 +138,8 @@ export default {
 }
 .field {
   margin-bottom: 24px;
+}
+input:invalid {
+  border: 2px dashed red;
 }
 </style>
